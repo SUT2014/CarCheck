@@ -9,7 +9,7 @@ package com.github.SUT2014.CarCheck.Test.StepDefinition;
 
 import com.github.SUT2014.CarCheck.properties.ConfigProperties;
 import com.github.SUT2014.CarCheck.selenium.CustomSelenium;
-import com.github.SUT2014.CarCheck.carCheck.carCheck;
+import com.github.SUT2014.CarCheck.carCheck.CarCheck;
 import com.github.SUT2014.CarCheck.utils.FileUtils;
 import com.github.SUT2014.CarCheck.utils.StringUtils;
 import io.cucumber.java.After;
@@ -20,13 +20,12 @@ import io.cucumber.java.en.When;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import java.net.URL;
 import java.util.List;
 
 public class CarTaxCheckFeatureSteps {
 
 
-    private static final Logger LOGGER = LogManager.getLogger(carCheck.class);
+    private static final Logger LOGGER = LogManager.getLogger(CarCheck.class);
     CustomSelenium cs;
     List<String> REGs;
 

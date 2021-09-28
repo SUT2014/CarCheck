@@ -36,5 +36,5 @@ public class ConfigProperties {
     }
     public String getCheckarUrl() { return properties.getProperty("url"); }
     public String getSearchPattern() { return properties.getProperty("searchPattern"); }
-    public Long getimplicitTimeOut() { return Long.getLong(properties.getProperty("implicitWaitTimeout")); }
+    public Integer getimplicitTimeOut() { return Integer.parseInt(properties.getProperty("implicitWaitTimeout")); }
 }

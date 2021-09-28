@@ -19,11 +19,11 @@ import java.util.concurrent.TimeUnit;
 
 public class CustomSelenium {
     private final Logger LOGGER;
-    private Long DELAY = 50L;
+    private Integer DELAY = 5000;
     private WebDriver browser = null;
     private String URL;
 
-    public CustomSelenium(Logger logger, Long seconds) {
+    public CustomSelenium(Logger logger, Integer seconds) {
         LOGGER = logger;
         this.DELAY = seconds;
     }
@@ -91,10 +91,10 @@ public class CustomSelenium {
     //send and click button
     public void findSendAndClick(String URL, String id, String input, String buttonStr) throws InterruptedException {
         navigateTo(URL);
-        Thread.sleep(DELAY);
+        Thread.sleep(this.DELAY);
         sendById(id, input);
         findAndClick(buttonStr);
-        Thread.sleep(DELAY);
+        Thread.sleep(this.DELAY);
     }
     // retrieve details by keys
     public String retrieveDetailsForKeys(String keys){

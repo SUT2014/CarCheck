@@ -11,7 +11,7 @@ Typical Requirements
 - Retrieves Car Registration Number from input file.  Multiple input files are supported.  There is no specific format for this input file as long as the Registration Numbers are mentioned.
 - Uses REGEX to retrieve the Registration Numbers, REGEX string is configurable as well in the config.properties project file.
 - Using Car Regs from input file, retrieves Tax details from well known website, in this case it is https://cartaxcheck.co.uk/ .  This can be configured in the config.properties file.
-- The Vehicle tax details are logged, asserts are currently disabled.
+- The Vehicle details are logged, asserts are currently disabled.
 
 TaxMan has been developed using the following tools/apps:
 
@@ -23,7 +23,10 @@ TaxMan has been developed using the following tools/apps:
 * [JUnit]    - JUnit Framework
 
 
-And of course TaxMan itself is open source.
+And of course CarCheck itself is open source.
+
+There are 2 parts to this utility.  Firstly, we can run the test using your IDE, entry point main main method, or secondly, through maven command as below.  A simple BDD style feature file has been written which can be extended extensively.
+Also, the input file and output file directories can have multiple files as input.  Each file will be read and pattern matched to obtain input data for the tests.
 
 ### Installation
 
